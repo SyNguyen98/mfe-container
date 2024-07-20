@@ -64,7 +64,9 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "mfe_container",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        "mfe-react": "mfe_react@http://localhost:3001/remoteEntry.js",
+      },
       exposes: {},
       shared: {
         ...deps,
