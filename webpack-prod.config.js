@@ -42,7 +42,7 @@ module.exports = (_, argv) => ({
       name: "mfe_container",
       filename: "remoteEntry.js",
       remotes: {
-        "mfe-react": "mfe_react@https://salmon-island-072e10b00.5.azurestaticapps.net/remoteEntry.js",
+        "mfe_react": "mfe_react@https://salmon-island-072e10b00.5.azurestaticapps.net/remoteEntry.js",
       },
       exposes: {},
       shared: {

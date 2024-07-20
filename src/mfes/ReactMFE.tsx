@@ -5,7 +5,7 @@ function ReactMfe() {
     const containerRef = useRef(null);
 
     useEffect(() => {
-        import('mfe-react/mountReactComponent').then(res => {
+        import('mfe_react/mountReactComponent').then(res => {
             res.mountReactComponent(containerRef.current!);
         }).catch(() =>{
             ReactDOM.createRoot(containerRef.current!).render(<div>Error</div>)

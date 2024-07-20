@@ -65,7 +65,7 @@ module.exports = (_, argv) => ({
       name: "mfe_container",
       filename: "remoteEntry.js",
       remotes: {
-        "mfe-react": "mfe_react@http://localhost:3001/remoteEntry.js",
+        "mfe_react": "mfe_react@http://localhost:3001/remoteEntry.js",
       },
       exposes: {},
       shared: {
