@@ -2,7 +2,7 @@
   "name": "mfe-container",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack -c webpack/webpack-prod.config.js",
+    "build": "webpack -c webpack-prod.config.js",
     "build:dev": "webpack --mode development",
     "start": "webpack serve --mode development",
     "start:live": "webpack serve --mode development --live-reload --hot"
