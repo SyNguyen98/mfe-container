@@ -1,5 +1,5 @@
 /// <reference types="react" />
 
-declare module 'mfe-react/mountReactComponent' {
+declare module 'mfe_react/mountReactComponent' {
     export function mountReactComponent(container: HTMLElement): void;
 }
