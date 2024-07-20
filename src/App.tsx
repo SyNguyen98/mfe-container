@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import ReactMFE from "./mfes/ReactMFE";
 
 const App = () => (
     <div className="container">
@@ -10,8 +9,6 @@ const App = () => (
         <div>Framework: react</div>
         <div>Language: TypeScript</div>
         <div>CSS: Empty CSS</div>
-
-        <ReactMFE/>
     </div>
 )
 const rootElement = document.getElementById('app')
