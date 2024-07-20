@@ -43,7 +43,7 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "mfe_container",
+      name: "mfe-container",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {},
