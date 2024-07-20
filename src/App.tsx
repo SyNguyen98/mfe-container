@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
+import Main from "./component/Main";
 
 const App = () => (
     <div className="container">
@@ -9,6 +10,8 @@ const App = () => (
         <div>Framework: react</div>
         <div>Language: TypeScript</div>
         <div>CSS: Empty CSS</div>
+
+        <Main/>
     </div>
 )
 const rootElement = document.getElementById('app')
