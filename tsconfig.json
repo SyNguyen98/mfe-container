@@ -6,9 +6,6 @@
       "dom",
       "esnext"
     ],
-    "types": [
-      "webpack-env"
-    ],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
