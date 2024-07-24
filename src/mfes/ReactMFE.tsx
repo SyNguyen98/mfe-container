@@ -5,7 +5,9 @@ function ReactMfe() {
     const containerRef = useRef(null);
 
     useEffect(() => {
-        mountReactComponent(containerRef.current!);
+        if (containerRef.current) {
+            mountReactComponent(containerRef.current);
+        }
     }, []);
     return (
         <div ref={containerRef}>Loading</div>
