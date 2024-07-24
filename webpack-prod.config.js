@@ -5,7 +5,7 @@ const deps = require("./package.json").dependencies;
 
 module.exports = () => ({
   output: {
-    publicPath: "/",
+    publicPath: "https://mango-tree-053bd7200.5.azurestaticapps.net/",
   },
 
   mode: "production",
