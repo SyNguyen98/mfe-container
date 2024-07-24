@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import Main from "./component/Main";
+import VueComponentWrapper from "./mfes/VueMFE";
+import ReactMFE from "./mfes/ReactMFE";
 
 const App = () => (
     <div className="container">
@@ -11,7 +12,9 @@ const App = () => (
         <div>Language: TypeScript</div>
         <div>CSS: Empty CSS</div>
 
-        <Main/>
+        <ReactMFE/>
+
+        <VueComponentWrapper/>
     </div>
 )
 const rootElement = document.getElementById('app')

@@ -42,7 +42,20 @@ module.exports = (_, argv) => ({
             {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
-                use: "ts-loader",
+                use: [
+                    {
+                        loader: "ts-loader",
+                        options: {
+                            transpileOnly: true,
+                            appendTsSuffixTo: ["\\.vue$"],
+                            happyPackMode: true,
+                        },
+                    }
+                ],
+            },
+            {
+                test: /\.vue$/,
+                loader: "vue-loader",
             },
             {
                 test: /\.(css|s[ac]ss)$/i,
@@ -68,6 +81,7 @@ module.exports = (_, argv) => ({
             filename: "remoteEntry.js",
             remotes: {
                 "mfe_react": "mfe_react@http://localhost:3001/remoteEntry.js",
+                "mfe_vue": "mfe_vue@http://localhost:3002/remoteEntry.js",
             },
             exposes: {},
             shared: {

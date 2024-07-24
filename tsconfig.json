@@ -6,6 +6,9 @@
       "dom",
       "esnext"
     ],
+    "types": [
+      "webpack-env"
+    ],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -16,7 +19,7 @@
     "sourceMap": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"
   ],
   "exclude": [
     "node_modules",

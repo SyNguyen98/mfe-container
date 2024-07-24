@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/mfe-container.iml" filepath="$PROJECT_DIR$/.idea/mfe-container.iml" />
       <module fileurl="file://$PROJECT_DIR$/../mfe-react/.idea/mfe-react.iml" filepath="$PROJECT_DIR$/../mfe-react/.idea/mfe-react.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mfe-vue/.idea/mfe-vue.iml" filepath="$PROJECT_DIR$/../mfe-vue/.idea/mfe-vue.iml" />
     </modules>
   </component>
 </project>
