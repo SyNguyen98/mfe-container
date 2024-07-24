@@ -1,5 +1,5 @@
 import React from "react";
-import { createApp, App } from 'vue';
+import { createApp, App } from '@vue/runtime-dom';
 
 const loadVueComponent = async () => {
   const vueApp = await import('mfe_vue/VueComponent');
