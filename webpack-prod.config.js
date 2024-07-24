@@ -3,7 +3,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 const deps = require("./package.json").dependencies;
 
-module.exports = (_, argv) => ({
+module.exports = () => ({
   output: {
     publicPath: "/",
   },
@@ -17,22 +17,23 @@ module.exports = (_, argv) => ({
   module: {
     rules: [
       {
-        test: /\.m?js/,
-        type: "javascript/auto",
-        resolve: {
-          fullySpecified: false,
-        },
+        test: /.tsx/,
+        exclude: /node_modules/,
+        use: "ts-loader",
       },
       {
         test: /\.(css|s[ac]ss)$/i,
-        use: ["style-loader", "css-loader", "postcss-loader"],
+        use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(ts|tsx|js|jsx)$/,
+        test: /\.(jsx)?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
         },
+        options: {
+          presets: ["@babel/preset-env", "@babel/preset-react"],
+        }
       },
     ],
   },
