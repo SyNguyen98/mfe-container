@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import ReactDOM from "react-dom/client";
+import {mountReactComponent} from "mfe_react/mountReactComponent";
 
 function ReactMfe() {
     const containerRef = useRef(null);
