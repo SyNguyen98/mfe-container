@@ -9,7 +9,7 @@ const App = () => (
         <h1>This is MFE Container</h1>
 
         <ReactMFE/>
-
+        <hr style={{margin: "1rem auto"}}/>
         <VueMFE/>
     </div>
 )
