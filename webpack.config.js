@@ -1,13 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const path = require('path');
-const Dotenv = require('dotenv-webpack');
 
 const deps = require("./package.json").dependencies;
 
 const printCompilationMessage = require('./compilation.config.js');
 
-module.exports = (_, argv) => ({
+module.exports = () => ({
     output: {
         publicPath: "http://localhost:3000/",
     },
@@ -42,20 +41,7 @@ module.exports = (_, argv) => ({
             {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
-                use: [
-                    {
-                        loader: "ts-loader",
-                        options: {
-                            transpileOnly: true,
-                            appendTsSuffixTo: ["\\.vue$"],
-                            happyPackMode: true,
-                        },
-                    }
-                ],
-            },
-            {
-                test: /\.vue$/,
-                loader: "vue-loader",
+                use: "ts-loader",
             },
             {
                 test: /\.(css|s[ac]ss)$/i,

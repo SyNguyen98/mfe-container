@@ -10,7 +10,7 @@ function ReactMfe() {
         }
     }, []);
     return (
-        <div ref={containerRef}>Loading</div>
+        <div ref={containerRef}>Loading React MFE...</div>
     );
 }
 
